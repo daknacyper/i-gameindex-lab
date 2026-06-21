@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 资料整理 & 信息索引</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f9f6f0;
+            color: #2e2a24;
+            font-family: 'Georgia', 'Noto Serif SC', '宋体', serif;
+            line-height: 1.8;
+            padding: 2rem 1.5rem;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .hero {
+            margin: 3rem 0 2.5rem;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 450;
+            letter-spacing: 2px;
+            color: #3a352e;
+            border-bottom: 1px solid #d9d0c0;
+            padding-bottom: 0.6rem;
+            display: inline-block;
+        }
+        .hero p {
+            margin-top: 1.2rem;
+            font-size: 1.05rem;
+            color: #4d463c;
+        }
+        .section-title {
+            font-size: 1.35rem;
+            margin: 2.8rem 0 1.2rem;
+            font-weight: 500;
+            color: #3f382f;
+            border-left: 4px solid #b5a48a;
+            padding-left: 1rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem;
+            margin: 1.8rem 0 1.2rem;
+        }
+        .feature-item {
+            background: #fefcf8;
+            border-radius: 12px;
+            padding: 1.4rem 1.2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02), 0 4px 12px rgba(60,45,30,0.04);
+            transition: transform 0.15s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(60,45,30,0.06);
+        }
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            color: #4b4237;
+        }
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #5e5549;
+        }
+        .highlight-box {
+            background: #efe9de;
+            border-radius: 18px;
+            padding: 1.8rem 2rem;
+            margin: 2.2rem 0;
+            border-left: 6px solid #9b8b77;
+        }
+        .highlight-box p {
+            font-size: 1rem;
+            margin-bottom: 0.6rem;
+        }
+        .highlight-box strong {
+            color: #3b3226;
+            font-weight: 600;
+        }
+        .callout {
+            background: #f4f0e8;
+            padding: 1.2rem 1.6rem;
+            border-radius: 30px 8px 8px 30px;
+            border-left: 6px solid #c3b098;
+            margin: 2rem 0;
+            font-size: 0.98rem;
+            color: #4a4136;
+        }
+        .scenario-list {
+            padding-left: 1.2rem;
+            margin: 1rem 0 2rem;
+        }
+        .scenario-list li {
+            margin-bottom: 0.7rem;
+            list-style-type: "· ";
+            color: #4b4237;
+        }
+        .faq-summary {
+            margin: 2.5rem 0 2rem;
+            border-top: 1px dashed #d4cbbb;
+            padding-top: 2rem;
+        }
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #3f372d;
+            margin-bottom: 0.2rem;
+        }
+        .faq-item p {
+            font-size: 0.95rem;
+            color: #5b5145;
+            margin-left: 0.8rem;
+        }
+        .footnote {
+            margin-top: 3.5rem;
+            font-size: 0.9rem;
+            color: #7d7263;
+            border-top: 1px solid #ddd3c4;
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+        a {
+            color: #6f604c;
+            text-decoration: none;
+            border-bottom: 1px solid #cdbfac;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        a:hover {
+            color: #3b2f21;
+            border-color: #3b2f21;
+        }
+        .inline-link {
+            border-bottom: 1px dotted #b3a48e;
+        }
+        @media (max-width: 560px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .highlight-box {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>爱游戏 · 资料整理与信息索引</h1>
+        <p>在庞杂的游戏资讯中，找到一条从容的检索路径。这里并非速评或导购，而是一处安静整理、按月归档的索引库——尝试用克制的方式，为关心游戏的人提供可回溯的线索。</p>
+    </div>
+
+    <div class="section-title">为什么需要这样的索引</div>
+    <p>游戏信息的生产远快于消费。每天上千篇评测、视频、更新公告涌出，真正值得驻留的内容却容易沉没。从资料整理的角度看，一个干净、可检索的索引比即时推送更有长期价值。<a href="https://i-gameindex.com.cn">爱游戏</a>正是围绕这点展开：不追逐热点标题，而是将每月值得关注的选题、开发者访谈、设计拆解以及行业数据归拢成表，方便你在需要时回看。</p>
+
+    <div class="section-title">几个值得注意的特点</div>
+    <div class="feature-grid">
+        <div class="feature-item">
+            <h3>按月归档 · 不惧延迟</h3>
+            <p>每期内容以月为节点整理，不必担心遗漏。你可以从任意月份切入，也可以按标签筛选平台、类型或主题。</p>
+        </div>
+        <div class="feature-item">
+            <h3>筛选而非推荐</h3>
+            <p>站内索引侧重“存在”而非“评价”。每一条收录均配有简注，但把判断留给你——不贴分数，不用“必玩”标签。</p>
+        </div>
+        <div class="feature-item">
+            <h3>站外来源并举</h3>
+            <p>索引不限于单站点内容，会附带引用原文、播客、学术向分析或开发日志，方便你按需深挖。</p>
+        </div>
+        <div class="feature-item">
+            <h3>结构清晰 · 低阅读负担</h3>
+            <p>无广告弹窗、无无限滚动。页面采用文档式布局，分类折叠，适合沉浸查阅而非无意识刷屏。</p>
+        </div>
+    </div>
+
+    <div class="highlight-box">
+        <p><strong>一个使用场景：</strong>你在研究某款独立游戏的叙事设计，希望找到开发者在发行前后的公开分享。在搜索引擎里翻找半小时后，不妨先来 <a href="https://i-gameindex.com.cn">爱游戏</a> 的索引中按月份定位，很可能已经收录了相关的访谈、GDC 演讲笔记或社区讨论串。省去重复搜索，把精力放在阅读本身。</p>
+        <p style="margin-top:0.8rem;"><strong>另一个建议：</strong>如果你正在做游戏历史或个人向的整理记录，这里的月度索引可以作为资料底本——站点本身不生产大量原文，却乐于为你的资料库提供骨架式参照。</p>
+    </div>
+
+    <div class="section-title">常规会收录哪些内容</div>
+    <ul class="scenario-list">
+        <li>每月的游戏相关文献、设计复盘、音画制作幕后</li>
+        <li>产业数据报告（不含投资建议）与趋势简析</li>
+        <li>非商业向的开发者日志、独立游戏制作播客</li>
+        <li>有深度的玩家考据、版本考古与社区讨论整理</li>
+        <li>少量精选的游戏机制分析（侧重于设计而非攻略）</li>
+    </ul>
+
+    <div class="callout">
+        ⏳ 提示：爱游戏是一个持续更新中的索引站点，内容由维护者根据公开信息收集整理。索引条目均尽量标注来源与发布时间，但不替代原始出处。如果你发现链接失效或有遗漏，欢迎通过站点内反馈方式提醒，但请理解人工维护的节奏。
+    </div>
+
+    <div class="faq-summary">
+        <div class="section-title" style="border-left-color:#b5a48a; margin-top:0;">常见想法摘要</div>
+        <div class="faq-item">
+            <strong>这是游戏评测站吗？</strong>
+            <p>不是。站点侧重索引与整理，不提供评分、购买建议或“必玩清单”。你可以把它看作一份带有注释的书目，只不过书目指向的是游戏相关的内容而非传统书籍。</p>
+        </div>
+        <div class="faq-item">
+            <strong>更新频率如何？</strong>
+            <p>以月为单位整理，每月下旬或次月上旬完成上一月的收录。遇特殊主题（如大型展会、游戏史学专题）会附加单篇索引。</p>
+        </div>
+        <div class="faq-item">
+            <strong>能否提交自己写的内容？</strong>
+            <p>目前索引以外链和已公开资料为主，暂不开放投稿。但如果你有值得收录的原创分析、考据或开发笔记，可以在站内页面找到联系入口，维护者会评估后决定是否列入后续索引。</p>
+        </div>
+    </div>
+
+    <div class="footnote">
+        信息整理与索引 · 基于公开资料 · 无诱导点击内容<br>
+        如需浏览月度索引，可直接前往 <a href="https://i-gameindex.com.cn">爱游戏</a>
+    </div>
+
+</body>
+</html>
