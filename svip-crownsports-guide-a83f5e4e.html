@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>皇冠体育 · 知识查询与参考入口</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f7f4ed;
+            color: #2e2c2a;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.65;
+            padding: 2rem 1.5rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        /* 排版骨架 */
+        .page-title {
+            font-size: 1.9rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            border-left: 5px solid #b8a48b;
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+            color: #3d3833;
+        }
+        .subhead {
+            color: #6d655a;
+            font-size: 0.95rem;
+            margin-bottom: 2.5rem;
+            padding-left: 1.4rem;
+            border-bottom: 1px solid #d9d2c6;
+            padding-bottom: 0.75rem;
+        }
+        .section-card {
+            background: #ffffffef;
+            border-radius: 12px;
+            padding: 1.5rem 1.8rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02), 0 4px 12px rgba(0,0,0,0.03);
+        }
+        .section-card h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #4c4640;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed #d1c9bf;
+            padding-bottom: 0.6rem;
+        }
+        .dir-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .dir-item {
+            background: #f3efe9;
+            padding: 1rem 1.1rem;
+            border-radius: 10px;
+            transition: background 0.2s;
+        }
+        .dir-item strong {
+            display: block;
+            font-weight: 500;
+            color: #4c3f34;
+            margin-bottom: 0.25rem;
+        }
+        .dir-item p {
+            font-size: 0.92rem;
+            color: #5f574e;
+            margin: 0;
+        }
+        .dir-item:hover {
+            background: #ece5db;
+        }
+        .hint-box {
+            background: #eae2d6;
+            border-left: 5px solid #a7927c;
+            padding: 1rem 1.5rem;
+            border-radius: 0 10px 10px 0;
+            font-size: 0.95rem;
+            margin: 1.2rem 0 0.5rem 0;
+            color: #3d352d;
+        }
+        .hint-box strong {
+            color: #3a322a;
+            font-weight: 600;
+        }
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 2rem;
+            margin-top: 0.8rem;
+        }
+        .info-tag {
+            background: #dad1c4;
+            padding: 0.15rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            color: #3b342d;
+            white-space: nowrap;
+        }
+        .faq-mini {
+            border-left: 3px solid #b7aa9a;
+            padding-left: 1rem;
+            margin: 0.8rem 0;
+        }
+        .faq-mini q {
+            font-style: normal;
+            color: #4b433b;
+        }
+        .faq-mini .answer {
+            display: block;
+            margin-top: 0.3rem;
+            font-size: 0.92rem;
+            color: #4f4a44;
+        }
+        .related-list {
+            list-style: none;
+            padding: 0;
+            columns: 2 180px;
+            column-gap: 2rem;
+        }
+        .related-list li {
+            break-inside: avoid;
+            padding: 0.35rem 0;
+            font-size: 0.95rem;
+            color: #4f463e;
+            border-bottom: 1px dotted #d6cdc0;
+        }
+        .related-list li::before {
+            content: "· ";
+            color: #8f806f;
+            font-weight: bold;
+        }
+        a {
+            color: #6d5b46;
+            text-decoration: none;
+            border-bottom: 1px solid #cbbcac;
+            transition: color 0.15s, border-color 0.15s;
+        }
+        a:hover {
+            color: #2f261f;
+            border-bottom-color: #7c6b58;
+        }
+        .footer-note {
+            margin-top: 2.5rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #d7cfc3;
+            font-size: 0.85rem;
+            color: #73695e;
+            text-align: center;
+        }
+        @media (max-width: 640px) {
+            body { padding: 1.2rem 1rem; }
+            .dir-grid { grid-template-columns: 1fr; }
+            .section-card { padding: 1.2rem; }
+            .page-title { font-size: 1.6rem; }
+            .related-list { columns: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="page-title">皇冠体育 · 信息查询与对照库</h1>
+        <div class="subhead">面向日常查阅、要点归纳及延伸参考 · 版本 2025.03</div>
+    </header>
+
+    <!-- 目录感入口区：知识卡片 -->
+    <section class="section-card">
+        <h2>📋 快速索引</h2>
+        <div class="dir-grid">
+            <div class="dir-item">
+                <strong>基础概况</strong>
+                <p>平台定位、服务范围与核心功能速览</p>
+            </div>
+            <div class="dir-item">
+                <strong>使用指引</strong>
+                <p>账户操作、常见流程与界面说明</p>
+            </div>
+            <div class="dir-item">
+                <strong>数据对照</strong>
+                <p>赛事类型、赔率格式与时间参考</p>
+            </div>
+            <div class="dir-item">
+                <strong>辅助资源</strong>
+                <p>术语表、公告存档及帮助中心摘要</p>
+            </div>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.95rem; color: #5d544b;">
+            以上索引基于<strong>日常查询</strong>场景编排，便于快速定位。如需直接进入主站，可参考下文中嵌入的链接。
+        </p>
+    </section>
+
+    <!-- 说明区：平台简述 + 自然嵌入链接 -->
+    <section class="section-card">
+        <h2>🔍 平台概述</h2>
+        <p>
+            <a href="https://svip-crownsports.com">皇冠体育</a> 是一个面向体育赛事资讯与综合服务的线上平台，主要提供赛事数据、赔率变化、赛事进程等参考信息。用户常将其用作快速核对赛程、对比不同市场开出的赔率，以及获取较为完整的赛事走势记录。平台界面以信息密度高、更新节奏快为特点，对于需要对照数据的用户而言具有实用价值。
+        </p>
+        <p style="margin-top: 0.8rem;">
+            在实际使用中，很多用户会将 <a href="https://svip-crownsports.com">皇冠体育</a> 作为日常查询的补充来源，尤其是当需要同时参考多个数据源进行交叉验证时。平台提供的历史赛事回溯功能也让延伸阅读成为可能。
+        </p>
+        <div class="hint-box">
+            <strong>提示</strong>：建议在使用任何数据平台前，先明确自身查询目的（对比、追踪、存档等），再选取对应模块。直接进入主站后可利用顶部导航快速切换视图。
+        </div>
+    </section>
+
+    <!-- 提示区：使用注意 + 场景举例 -->
+    <section class="section-card">
+        <h2>⚠️ 使用提示</h2>
+        <div class="info-row">
+            <span class="info-tag">时间校准</span>
+            <span class="info-tag">赔率变动</span>
+            <span class="info-tag">多终端同步</span>
+            <span class="info-tag">数据延迟</span>
+        </div>
+        <ul style="margin-top: 0.8rem; padding-left: 1.2rem; color: #4d453e;">
+            <li>页面所展示数据通常存在数秒至数十秒的延迟，实时性要求高的场景建议开启自动刷新。</li>
+            <li>不同赛事、联赛的更新频次存在差异，可参考平台内置的“更新状态”指示。</li>
+            <li>收藏夹或历史记录功能可用于追踪重点场次，便于赛后复盘与对照。</li>
+            <li>极少数情况下可能出现数据异常中断，可尝试切换线路或清空缓存后重试。</li>
+        </ul>
+        <p style="margin-top: 0.6rem; font-size: 0.93rem;">
+            对于初次使用 <a href="https://svip-crownsports.com">皇冠体育</a> 的用户，建议先浏览“新手引导”或“常见问题”板块，以熟悉界面的信息层级。
+        </p>
+    </section>
+
+    <!-- 相关信息区：延伸阅读 + FAQ 摘要 -->
+    <section class="section-card">
+        <h2>📎 延伸参考 & 常见问题摘要</h2>
+        <div class="faq-mini">
+            <q>平台是否提供历史赔率对比图？</q>
+            <span class="answer">部分主流赛事支持日/周/月走势图，可在对应场次的“统计”页面找到。</span>
+        </div>
+        <div class="faq-mini">
+            <q>如何快速查找到特定联赛的赛程？</q>
+            <span class="answer">使用顶部搜索框输入联赛名称或关键词，也可通过“赛事”分类逐级筛选。</span>
+        </div>
+        <div class="faq-mini">
+            <q>与官方数据源相比，差异大吗？</q>
+            <span class="answer">核心数据基本一致，但呈现方式和更新频率可能不同。建议交叉参考。</span>
+        </div>
+        <div style="margin-top: 1.2rem;">
+            <h3 style="font-size: 1rem; font-weight: 500; color: #4b423a; margin-bottom: 0.5rem;">常用知识条目</h3>
+            <ul class="related-list">
+                <li>赔率类型：欧洲、香港、马来、印尼</li>
+                <li>滚球与早盘区别</li>
+                <li>大小球盘口解读</li>
+                <li>让球盘与标准盘对照</li>
+                <li>串关方式与赔付计算</li>
+                <li>赛事延期/取消处理规则</li>
+                <li>账户安全与双重验证</li>
+            </ul>
+        </div>
+        <p style="margin-top: 1rem; border-top: 1px solid #e1d8cd; padding-top: 1rem; font-size: 0.9rem;">
+            若需获取更详细的解读或最新公告，直接进入 <a href="https://svip-crownsports.com">皇冠体育</a> 后可在“帮助”或“资讯”板块查阅。本页仅整理知识库入口式概要，供日常对照与延伸阅读。
+        </p>
+    </section>
+
+    <footer class="footer-note">
+        内容仅供参考，不构成任何指导建议 · 数据来源以平台实际展示为准
+    </footer>
+
+</body>
+</html>
